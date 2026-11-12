@@ -7,7 +7,7 @@ GitHub Pages site for LavIPTV: privacy policy and a legal test playlist with a T
 | `index.html` | Landing page with links |
 | `privacy.html` | Privacy policy (English) |
 | `privacy-ru.html` | Privacy policy (Russian) |
-| `playlist.m3u` | Test playlist: Apple/Mux/Unified Streaming/Akamai test streams, Blender open movies, DW live |
+| `playlist.m3u` | Test playlist: Apple/Mux/Unified Streaming/Akamai test streams, Blender open movies (also the app's "Try demo" playlist) |
 | `epg.xml` | Synthetic XMLTV guide for the test channels (30 days from generation) |
 | `logos/` | Generated channel logos |
 | `tools/generate.py` | Regenerates `playlist.m3u`, `epg.xml` and (with `--logos`) the logos |
@@ -47,4 +47,4 @@ python3 tools/generate.py --base-url https://USERNAME.github.io/laviptv-pages &&
   > (or add `https://USERNAME.github.io/laviptv-pages/epg.xml` as the guide). All streams are public test streams or
   > openly licensed films.
 
-For store screenshots use the test channels only (not DW): no third-party logos or programmes.
+The app's onboarding "Try demo" button loads `playlist.m3u`: keep it to test streams and openly licensed films, with no third-party channels or branding.

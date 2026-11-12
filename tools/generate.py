@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Generates the LavIPTV test playlist (playlist.m3u), its guide (epg.xml) and channel logos (logos/*.png).
 
-All streams are public test streams or openly licensed films; the guide is synthetic.
+All streams are public test streams or openly licensed films; the guide is synthetic. The app's onboarding
+"Try demo" button opens playlist.m3u, so keep it free of third-party channels and branding.
 
 Usage:
     python3 tools/generate.py --base-url https://USERNAME.github.io/laviptv-pages [--days 30] [--logos]
@@ -78,12 +79,6 @@ CHANNELS = [
             ("Live Clock", 60, "Technical", "Synthetic guide entry for testing the now/next bar."),
         ],
     ),
-    # Real broadcaster streams that Deutsche Welle offers for free viewing: no logo and no guide of ours, so nothing
-    # here pretends to be DW's own schedule or branding.
-    Channel("", "DW English", "News", "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
-            None, [], logo=False),
-    Channel("", "DW Español", "News", "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
-            None, [], logo=False),
 ]
 
 
