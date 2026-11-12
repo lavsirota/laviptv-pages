@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LavIPTV</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #e3e3e3; --accent: #1e88e5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #121212; --fg: #e8e8e8; --muted: #a0a0a0; --line: #2c2c2c; --accent: #64b5f6; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { margin: 0 0 8px; }
+  h2 { font-size: 1.2em; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  code { word-break: break-all; }
+</style>
+</head>
+<body>
+<main>
+<h1>LavIPTV</h1>
+<p class="muted">A player for Android TV. It plays playlists and TV guides that you add yourself; it does not provide any channels or content.</p>
+
+<h2>Privacy</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#ru">Политика конфиденциальности</a></p>
+
+<h2>Test playlist</h2>
+<p>A sample playlist of public test streams and openly licensed films (Blender Foundation, CC BY 3.0), with a synthetic TV guide:</p>
+<ul>
+  <li>Playlist: <a href="playlist.m3u"><code>playlist.m3u</code></a></li>
+  <li>TV guide (XMLTV): <a href="epg.xml"><code>epg.xml</code></a></li>
+</ul>
+<p class="muted">Streams belong to their owners: Apple (HLS examples), Mux, Unified Streaming and Akamai test streams; DW streams are offered by Deutsche Welle for free viewing.</p>
+</main>
+</body>
+</html>
