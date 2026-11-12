@@ -5,7 +5,8 @@ GitHub Pages site for LavIPTV: privacy policy and a legal test playlist with a T
 | File | What |
 |---|---|
 | `index.html` | Landing page with links |
-| `privacy.html` | Privacy policy, English and Russian (`#ru`) |
+| `privacy.html` | Privacy policy (English) |
+| `privacy-ru.html` | Privacy policy (Russian) |
 | `playlist.m3u` | Test playlist: Apple/Mux/Unified Streaming/Akamai test streams, Blender open movies, DW live |
 | `epg.xml` | Synthetic XMLTV guide for the test channels (30 days from generation) |
 | `logos/` | Generated channel logos |
